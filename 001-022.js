@@ -4,4 +4,15 @@ function removeChar(str) {
    return str.slice(1, -1);
 };
 
-//2.
+//2. Перевернутые строки
+//split -- разбивает строку на символы;
+//reverse -- переворачивает массив;
+//join -- собирает строку из массива.
+function solution(str) {
+   return str.split("").reverse().join("");
+}
+
+//3. MakeUpperCase
+function makeUpperCase(str) {
+   return str.toUpperCase();
+}
