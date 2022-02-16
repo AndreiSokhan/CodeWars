@@ -25,3 +25,26 @@ function isPalindrome(x) {
    // comparisong
    return x === x.split('').reverse().join('')
 }
+
+//5. Преобразовать число в перевернутый массив цифр
+function digitize(n) {
+   n = String(n).split('').reverse().map(Number);
+   return n;
+}
+
+//6. Напишите функцию, которая повторяет строку n раз
+function repeatStr(n, s) {
+   var new_s = '';
+   while (n-- > 0) new_s += s;
+   return new_s;
+}
+
+// или
+function repeatStr(n, str) {
+   return str.repeat(n);
+}
+
+//7.Базовое присвоение переменной
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
