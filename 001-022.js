@@ -16,3 +16,12 @@ function solution(str) {
 function makeUpperCase(str) {
    return str.toUpperCase();
 }
+
+//4.Это палиндром?
+function isPalindrome(x) {
+   // turn the string to lowercase
+   x = x.toLowerCase()
+   // reverse input string and return the result of the
+   // comparisong
+   return x === x.split('').reverse().join('')
+}
