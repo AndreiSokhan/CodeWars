@@ -48,3 +48,16 @@ function repeatStr(n, str) {
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+
+
+//8. Удаление глассных
+function shortcut(string) {
+   return string.replace(/[aeiou]+/g, "");
+}
+
+//9 Создайте функцию, которая возвращает массив целых чисел от n до 1, где n>0.
+const reverseSeq = n => {
+   let newArr = Array()
+   for (let i = 1; i<=n; i++) newArr.push(i)
+   return newArr.reverse()
+};
