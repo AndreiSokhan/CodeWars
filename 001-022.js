@@ -58,6 +58,26 @@ function shortcut(string) {
 //9 Создайте функцию, которая возвращает массив целых чисел от n до 1, где n>0.
 const reverseSeq = n => {
    let newArr = Array()
-   for (let i = 1; i<=n; i++) newArr.push(i)
-   return newArr.reverse()
+   for (let i = 1; i <= n; i++) newArr.push(i)
+   return newArr.reverse();
 };
+
+//10. Создать функцию, которая возвращает количество гласных в принимаемой строке
+function findVawels(str) {
+   let count = 0;
+   const vawels = ["a", "e", "i", "o", "u"];
+
+   for (let char of str.toLowerCase()) {
+      if (vawels.includes(char)) {
+         count += 1;
+      }
+   }
+
+   return count;
+}
+
+//11.
+function countSheeps(arrayOfSheep) {
+   const present = arrayOfSheep.filter(sheep => sheep);
+   return present.length;
+}
