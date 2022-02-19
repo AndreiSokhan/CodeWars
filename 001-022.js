@@ -81,3 +81,22 @@ function countSheeps(arrayOfSheep) {
    const present = arrayOfSheep.filter(sheep => sheep);
    return present.length;
 }
+
+//12. Получить среднее значение массива
+function getAverage(marks) {
+   var sum = 0;
+   for (var i = 0; i < marks.length; i++) {
+      sum += marks[i];
+   }
+   return Math.floor(sum / marks.length);
+}
+
+//13. Преобразование числа в строку!
+function numberToString(num) {
+   return value = String(num);
+}
+
+//14. Третий угол треугольника
+function otherAngle(a, b) {
+   return (180 - (a + b));
+}
