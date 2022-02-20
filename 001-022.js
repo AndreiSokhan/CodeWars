@@ -100,3 +100,47 @@ function numberToString(num) {
 function otherAngle(a, b) {
    return (180 - (a + b));
 }
+
+//15. Рассчитать среднее значение чисел массива
+function find_average(array) {
+   if (array.length === 0)
+      return 0;
+
+   let sum = 0;
+
+   for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+   }
+   return sum / array.length;
+}
+
+//16.Создайте функцию, которая возвращает значение, умноженное на 50 и увеличенное на 6. Если введенное значение является строкой, оно должно возвращать «Ошибка».
+function problem(x) {
+   if (typeof x !== 'number') {
+
+      return "Error";
+   }
+
+   return x * 50 + 6;
+}
+
+//17.Реализуйте функцию, определяющую, является ли строка, изограммой.
+function isIsogram(str) {
+   const normalized = str.replace(/\s/g, '').toLowerCase();
+   return normalized.length === new Set(normalized).size;
+}
+
+//18. Посчитать количество глассных букв в строке
+function getCount(str) {
+
+   var vowel_list = 'aeiouAEIOU';
+   var vowelsCount = 0;
+
+   for (var x = 0; x < str.length; x++) {
+      if (vowel_list.indexOf(str[x]) !== -1) {
+         vowelsCount += 1;
+      }
+
+   }
+   return vowelsCount;
+}
