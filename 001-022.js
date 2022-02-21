@@ -144,3 +144,21 @@ function getCount(str) {
    }
    return vowelsCount;
 }
+
+//19.
+var stringToNumber = function (str) {
+   // put your code here
+   return parseInt(str);
+}
+
+//20.
+function opposite(number) {
+   return number * (-1);
+}
+
+//21.
+function square(number) {
+   return (number * number);
+}
+
+//22.
