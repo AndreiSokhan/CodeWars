@@ -161,4 +161,46 @@ function square(number) {
    return (number * number);
 }
 
-//22.
+//22.Перевернутые слова
+function reverseWords(str) {
+   return str.split(" ").reverse().join(" ");
+}
+
+//23. Серия для начинающих #1 Школьная работа с документами
+function paperwork(n, m) {
+   if (n > 0 && m > 0) {
+      return n * m;
+   }
+   return 0;
+}
+
+//24. Вдвое старше
+const twiceAsOld = (dadYearsOld, sonYearsOld) =>
+   Math.abs(sonYearsOld * 2 - dadYearsOld);
+
+
+//25.Преобразование логического значения в строку
+function booleanToString(b) {
+   return value = String(b);
+}
+
+//26. Вернуть отрицательное число
+function makeNegative(num) {
+   if (num < 0) {
+      return num;
+   }
+   return num * (-1);
+}
+
+//27. умножить
+function multiply(a, b) {
+   return a * b;
+}
+
+//28. Функция 3 - умножение двух чисел
+function multiply(a, b) {
+   if (!a || !b || typeof (a) != "number" || typeof (b) != "number") {
+      return 0;
+   }
+   return a * b;
+}
