@@ -213,3 +213,59 @@ var summation = function (num) {
    }
    return sum;
 }
+
+//30. четное или нечетное (если четное -> вернуть "четное, если не четное -> вернуть "Не четное")
+function even_or_odd(number) {
+
+   if (number % 2 == 0) {
+      return 'Even'
+   }
+   return 'Odd';
+}
+
+// 31.
+function boolToWord(bool) {
+   if (bool === true) {
+      return "Yes";
+   }
+   return "No";
+}
+// или
+function boolToWord(bool) {
+   return bool ? 'Yes' : 'No';
+}
+
+//32. объем прямоугольного параллелепипеда
+class Kata {
+   static getVolumeOfCuboid(length, width, height) {
+      return length * width * height
+   }
+}
+
+//33. Простое умножение
+function simpleMultiplication(number) {
+
+   if (number % 2 == 0) {
+      return number * 8;
+   }
+   return number * 9;
+}
+
+//34. вернуть массив от минимального до такс (Что находится между)
+function between(a, b) {
+   return Array.from({
+      length: b - a + 1
+   }, (_, i) => i + a);
+}
+
+//35. Найдите наименьшее целое число в массиве
+class SmallestIntegerFinder {
+   findSmallestInt(args) {
+      return Math.min.apply(null, args);
+   }
+}
+
+//36. Reverse List Order
+function reverseList(list) {
+   return list.reverse();
+}
