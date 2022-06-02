@@ -120,7 +120,6 @@ function problem(x) {
 
       return "Error";
    }
-
    return x * 50 + 6;
 }
 
@@ -269,3 +268,29 @@ class SmallestIntegerFinder {
 function reverseList(list) {
    return list.reverse();
 }
+
+
+//поиск наибольшего значения в массиве
+//let maxScorsesUser = usersCopy[0]
+//for (let i = 1; i < usersCopy.length; i++) {
+//   if (usersCopy[i].scores > maxScorsesUser.scores) {
+//      maxScorsesUser = usersCopy[i]
+//   }
+//}
+//console.log(maxScorsesUser)
+
+
+//поиск наибольшего значения в массиве
+//const max = Math.max(...students.map(card => card.scores)) 
+//const studentMax = students.find(card => card.scores === max)
+
+//users.reduce((prev, cur) => {
+//return cur.score > prev.score ? cur : prev
+//}, users[0]))
+
+// 37.заменить все точки на тире
+var replaceDots = function(str) {
+   return str.replace(/\./g, '-');
+}
+
+// 38.
