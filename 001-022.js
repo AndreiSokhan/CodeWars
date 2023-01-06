@@ -269,7 +269,6 @@ function reverseList(list) {
    return list.reverse();
 }
 
-
 //поиск наибольшего значения в массиве
 //let maxScorsesUser = usersCopy[0]
 //for (let i = 1; i < usersCopy.length; i++) {
@@ -293,4 +292,18 @@ var replaceDots = function(str) {
    return str.replace(/\./g, '-');
 }
 
-// 38.
+// 38. вернуть время после полуночи в милисекундах
+function past(h, m, s){
+   return h*3600000+m*60000+s*1000
+}
+
+const past = (h,m,s) => 1000 * (3600 * h + 60 * m + s);
+
+// 39. вернуть слово s повторяющееся n раз
+function repeatStr (n, s) {
+   var new_s = '';
+   while (n-- > 0) new_s += s;
+   return new_s;
+}
+
+//40. 
