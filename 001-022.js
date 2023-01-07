@@ -306,4 +306,48 @@ function repeatStr (n, s) {
    return new_s;
 }
 
-//40. 
+//40. инвертировать значение 
+function invert(array) {
+   for (let i = 0; i < array.length; i++) {
+         if(array[i] === "0") {
+           array[i] = array[i] * (1);
+         }
+         array[i] = array[i] * (-1);
+      }
+   return array ;
+}
+
+function invert(array) {
+   return array.map(el => -el);
+}
+
+//41. какому кварталу принадлежит месяц?
+const quarterOf = (month) => {
+   if (month === 1) {
+     return 1
+   } if (month === 2) {
+     return 1
+   } if (month === 3) {
+     return 1
+   } if (month === 4) {
+     return 2
+   } if (month === 5) {
+     return 2
+   } if (month === 6) {
+     return 2
+   } if (month === 7) {
+     return 3
+   } if (month === 8) {
+     return 3
+   } if (month === 9) {
+     return 3
+   } if (month === 10) {
+     return 4
+   } if (month === 11) {
+     return 4
+   } if (month === 12) {
+     return 4
+   } 
+ }
+
+ return Math.ceil(month / 3);
